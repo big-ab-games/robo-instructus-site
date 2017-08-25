@@ -1,0 +1,15 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "Alex Butler Gamedev Blog",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": "n/a",
+  "homepage": "https://github.com/alex-butler-games/alex-butler-games.github.io#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1"
+  }
+}

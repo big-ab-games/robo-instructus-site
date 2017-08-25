@@ -1,0 +1,20 @@
+# theme: jekyll-theme-midnight
+page_title: Robo Instructus
+title: Robo Instructus
+description: Robo Instructus
+# google_analytics: UA-100809402-1
+
+defaults:
+- scope:
+    path: "" # all
+  values:
+    layout: default
+    author: Alex Butler
+    catagories: gamedev
+
+exclude:
+- node_modules
+- gulpfile.js
+- package.json
+- README.md
+- package-lock.json
