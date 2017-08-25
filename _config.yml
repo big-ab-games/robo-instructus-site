@@ -1,7 +1,7 @@
 # theme: jekyll-theme-midnight
 title: Robo Instructus
 description: Robo Instructus
-# google_analytics: UA-100809402-1
+google_analytics: UA-100809402-2
 
 defaults:
 - scope:
