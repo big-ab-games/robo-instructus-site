@@ -1,6 +1,6 @@
 Robo Instructus Site
 ========================
-View at [roboinstruct.us](https://roboinstruct.us)
+View at [www.roboinstruct.us](http://www.roboinstruct.us/)
 
 ## Build
 Install node & ruby
