@@ -6,7 +6,7 @@ body {
   background: #252525;
   color: #ddd;
   text-align: center;
-  padding-top: 4ex;
+  padding-top: 1ex;
 }
 
 #social-links {
@@ -23,7 +23,7 @@ body {
     display: inline-block;
     width: $size;
     height: $size;
-    margin: 0.5em;
+    margin: 0 0.5em 0.5em;
 
     i.fa {
       font-size: $font_size;
