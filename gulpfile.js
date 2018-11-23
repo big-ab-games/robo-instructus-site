@@ -4,7 +4,7 @@ const browserSync = require('browser-sync').create();
 
 let jekyllProcess;
 
-gulp.task('build', () => {
+function build(done) {
   if (jekyllProcess) jekyllProcess.kill();
   jekyllProcess = exec('jekyll build --watch --drafts', (err, stdout, stderr) => {
     if (err) {
@@ -14,14 +14,19 @@ gulp.task('build', () => {
     console.log(`stdout: ${stdout}`);
     console.log(`stderr: ${stderr}`);
   });
-});
+  done()
+}
 
-gulp.task('reload-browser', () => browserSync.reload());
+function reloadBrowser(done) {
+  browserSync.reload()
+  done()
+}
 
-gulp.task('serve', () => {
-    browserSync.init({server: {baseDir: '_site/'}});
-    gulp.watch('_site/**/*.*', ['reload-browser']);
-    gulp.watch(['_config.yml', '_drafts/*.*', '_includes/*.*', '_layouts/*.*'], ['build']);
-});
+function serve(done) {
+  browserSync.init({server: {baseDir: '_site/'}});
+  gulp.watch('_site/**/*.*', reloadBrowser);
+  gulp.watch(['_config.yml', '_drafts/*.*', '_includes/*.*', '_layouts/*.*'], build);
+  done()
+}
 
-gulp.task('default', ['build', 'serve']);
+exports.default = gulp.series(build, serve);
