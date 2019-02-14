@@ -1,0 +1,103 @@
+---
+---
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2bQb2mm4vw">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2bQb2mm4vw">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2bQb2mm4vw">
+  <link rel="manifest" href="/manifest.json?v=2bQb2mm4vw">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2bQb2mm4vw" color="#252525">
+  <link rel="shortcut icon" href="/favicon.ico?v=2bQb2mm4vw">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Fenix" rel="stylesheet">
+  <meta name="theme-color" content="#252525" />
+
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ 'assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <!-- <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
+
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  {% endif %}
+</head>
+<body>
+  <div class="title">Robo Instructus</div>
+
+  <a href="https://store.steampowered.com/app/1032170" class="get-on-steam">
+    <div>Wishlist now on</div>
+    <img src="/assets/steam.png" />
+  </a>
+
+  <div class="video-wrap">
+    <iframe width="944" height="531"
+      src="https://www.youtube-nocookie.com/embed/TODO"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="screens">
+    <a href="/assets/screen-1.jpg" class="screen"><img src="/assets/screen-1-sm.jpg" /></a>
+    <a href="/assets/screen-2.jpg" class="screen"><img src="/assets/screen-2-sm.jpg" /></a>
+    <a href="/assets/screen-3.jpg" class="screen"><img src="/assets/screen-3-sm.jpg" /></a>
+    <a href="/assets/screen-4.jpg" class="screen"><img src="/assets/screen-4-sm.jpg" /></a>
+    <a href="/assets/screen-5.jpg" class="screen"><img src="/assets/screen-5-sm.jpg" /></a>
+  </div>
+
+  <!-- Mailchimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <div id="mc_embed_signup">
+  <form action="https://roboinstruct.us16.list-manage.com/subscribe/post?u=236a78b07d621bdf30e8569d0&amp;id=6042e6f712" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div id="mc_embed_signup_scroll">
+  	<label for="mce-EMAIL">Subscribe to get a closed beta steam testing key</label>
+  	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_236a78b07d621bdf30e8569d0_6042e6f712" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+      </div>
+  </form>
+  </div>
+
+  <div id="social-links">
+    <div class="description">Connect with Robo Instructus and Big AB Games</div>
+    <a class="social-link" title="Read the devblog"
+      href="https://blog.roboinstruct.us">
+      <i class="fa fa-flask" aria-hidden="true"></i>
+    </a>
+    <a class="social-link" title="Visit our facebook page"
+      href="https://www.facebook.com/bigabgames">
+      <i class="fab fa-facebook-f" aria-hidden="true"></i>
+    </a>
+    <a class="social-link" title="Follow our twitter feed"
+      href="https://twitter.com/bigabgames">
+      <i class="fab fa-twitter" aria-hidden="true"></i>
+    </a>
+    <a class="social-link" title="Subscribe to the devblog RSS"
+      href="https://blog.roboinstruct.us/feed.xml">
+      <i class="fa fa-rss" aria-hidden="true"></i>
+    </a>
+    <a class="social-link" title="Send us an email"
+      href="mailto:alex@roboinstruct.us">
+      <i class="far fa-envelope" aria-hidden="true"></i>
+    </a>
+  </div>
+</body>
+</html>

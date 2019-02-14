@@ -7,13 +7,63 @@ body {
   color: #ddd;
   text-align: center;
   padding-top: 1ex;
+
+  .title {
+    $title_size: 100px;
+    font: $title_size "Fenix", Serif;
+    text-shadow: 0 0 $title_size*0.6 rgb(130, 130, 130),
+      $title_size*0.03 $title_size*0.03 $title_size*0.02 black;
+    padding: 0.3em 0 0.4em
+  }
+
+  .screens {
+    padding: 1.5em 0;
+    .screen {
+      padding: 0 8px;
+    }
+    img {
+      filter: brightness(66%);
+      transition: filter 333ms ease-out;
+    }
+    img:hover {
+        filter: brightness(100%);
+    }
+  }
+
+  .get-on-steam {
+    color: #fff;
+    text-decoration: none;
+
+    div {
+      display: inline-block;
+      position: relative;
+      top: -0.5em;
+      right: -0.6em;
+      font-size: 25px;
+      margin-bottom: 1em;
+    }
+    img {
+      height: 40px;
+    }
+    filter: brightness(70%);
+
+    &:hover {
+      filter: brightness(100%);
+    }
+
+    transition: filter 333ms ease-out;
+  }
 }
 
 #social-links {
   $size: 40px;
 
-  margin-top: 3ex;
+  margin-top: 5ex;
   text-align: center;
+
+  .description {
+    padding: 1em 0 0.75em;
+  }
 
   .social-link {
     $font_size: $size * (23/36);
@@ -23,26 +73,21 @@ body {
     display: inline-block;
     width: $size;
     height: $size;
-    margin: 0 0.5em 0.5em;
+    margin: 0em 0.5em 0.5em;
 
-    i.fa {
+    i.fa, i.fab, i.fas, i.far {
       font-size: $font_size;
       color: #111;
-      padding-top: $font_size / 3.3;
+      padding-top: $font_size / 3.5;
     }
     i.fa-rss {
       padding-left: $font_size / 12;
     }
-    i.fa-envelope-o {
-      position: relative;
-      top: -$font_size / 24;
-    }
-
     &:hover {
       background: #ccc;
     }
 
-    transition: background-color 333ms linear;
+    transition: background-color 333ms ease-out;
   }
 }
 
@@ -51,6 +96,7 @@ body {
   clear: left;
   font: 14px;
   width: 100%;
+  padding-top: 2em;
 }
 
 @font-face {
