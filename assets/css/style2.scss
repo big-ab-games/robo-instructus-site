@@ -1,5 +1,7 @@
 ---
 ---
+$trailer_width: 944px;
+$very_thin: 410px;
 
 body {
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9,53 +11,101 @@ body {
   color: #ddd;
   text-align: center;
   padding-top: 1ex;
+}
 
+.title {
+  $title_size: 100px;
+  font: $title_size "Fenix", Serif;
+  text-shadow: 0 0 $title_size*0.6 rgb(130, 130, 130),
+    $title_size*0.03 $title_size*0.03 $title_size*0.02 black;
+  padding: 0.1em 0 0.4em
+}
+@media only screen and (max-width: 750px) {
   .title {
-    $title_size: 100px;
+    $title_size: 12vw;
     font: $title_size "Fenix", Serif;
     text-shadow: 0 0 $title_size*0.6 rgb(130, 130, 130),
       $title_size*0.03 $title_size*0.03 $title_size*0.02 black;
     padding: 0.1em 0 0.4em
   }
+}
 
+.screens {
+  padding: 1.5em 0 0.75em;
+  .screen {
+    padding: 0 8px;
+  }
+  img {
+    filter: brightness(66%);
+    transition: filter 333ms ease-out;
+  }
+  img:hover {
+      filter: brightness(100%);
+  }
+}
+@media only screen and (max-width: $very_thin) {
   .screens {
-    padding: 1.5em 0;
     .screen {
-      padding: 0 8px;
+      padding: 0 1%;
     }
     img {
-      filter: brightness(66%);
-      transition: filter 333ms ease-out;
-    }
-    img:hover {
-        filter: brightness(100%);
+      width: 43%;
     }
   }
+}
 
+.get-on-steam {
+  color: #fff;
+  text-decoration: none;
+  // text-shadow: $size*0.03 $size*0.03 $size*0.02 #222;
+
+  div {
+    display: inline-block;
+    position: relative;
+    top: -0.5em;
+    right: -0.6em;
+    font-size: 25px;
+    margin: 0.5em 0;
+  }
+  img {
+    height: 40px;
+  }
+  filter: brightness(75%);
+
+  &:hover {
+    filter: brightness(100%);
+  }
+
+  transition: filter 333ms ease-out;
+}
+@media only screen and (max-width: $very_thin) {
   .get-on-steam {
-    $size: 25px;
-    color: #fff;
-    text-decoration: none;
-    // text-shadow: $size*0.03 $size*0.03 $size*0.02 #222;
-
     div {
-      display: inline-block;
-      position: relative;
-      top: -0.5em;
-      right: -0.6em;
-      font-size: $size;
-      margin-bottom: 1em;
+      font-size: 6vw;
     }
     img {
-      height: 40px;
+      height: 10vw;
     }
-    filter: brightness(75%);
+  }
+}
 
-    &:hover {
-      filter: brightness(100%);
-    }
 
-    transition: filter 333ms ease-out;
+.video-wrap {
+  text-align: center;
+}
+@media only screen and (max-width: $trailer_width) {
+  .video-wrap {
+  	position: relative;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	padding-top: 25px;
+  	height: 0;
+  }
+  .video-wrap iframe {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
   }
 }
 
@@ -98,9 +148,16 @@ body {
 // mail list signup
 #mc_embed_signup {
   clear: left;
-  font: 14px;
   width: 100%;
-  padding-top: 1em;
+  padding: 0 0 0.5em;
+  form div label {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: $very_thin) {
+  #mc_embed_signup form div label {
+    font-size: 3.3vw;
+  }
 }
 
 @font-face {
