@@ -147,6 +147,7 @@ body {
 
 // mail list signup
 #mc_embed_signup {
+  background: transparent !important;
   clear: left;
   width: 100%;
   padding: 0 0 0.5em;
@@ -156,7 +157,7 @@ body {
 }
 @media only screen and (max-width: $very_thin) {
   #mc_embed_signup form div label {
-    font-size: 3.3vw;
+    font-size: 3.5vw;
   }
 }
 
