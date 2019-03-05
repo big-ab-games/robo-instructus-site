@@ -144,6 +144,11 @@ body {
   }
 }
 
+.signup-closed {
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
 // mail list signup
 #mc_embed_signup {
   background: transparent !important;
@@ -179,6 +184,9 @@ body {
     .note {
       font-size: 2.6vw;
     }
+  }
+  .signup-closed {
+    font-size: 3.2vw ;
   }
 }
 
