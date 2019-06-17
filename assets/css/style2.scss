@@ -13,20 +13,18 @@ body {
   padding-top: 1ex;
 }
 
-.title {
-  $title_size: 100px;
-  font: $title_size "Fenix", Serif;
-  text-shadow: 0 0 $title_size*0.6 rgb(130, 130, 130),
-    $title_size*0.03 $title_size*0.03 $title_size*0.02 black;
-  padding: 0.1em 0 0.4em
+.title2 {
+  width: 950px;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 100px;
 }
-@media only screen and (max-width: 750px) {
-  .title {
-    $title_size: 12vw;
-    font: $title_size "Fenix", Serif;
-    text-shadow: 0 0 $title_size*0.6 rgb(130, 130, 130),
-      $title_size*0.03 $title_size*0.03 $title_size*0.02 black;
-    padding: 0.1em 0 0.4em
+@media only screen and (max-width: 950px) {
+  .title2 {
+    width: 100%;
+    font-size: 12vw;
   }
 }
 
