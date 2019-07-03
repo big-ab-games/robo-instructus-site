@@ -3,8 +3,13 @@
 
 <html>
 <head>
+  <title>{{ site.title }}</title>
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="theme-color" content="#252525" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="Robo Instructus is a PC puzzle game in which players manoeuvre a robot by issuing instructions via a simple programming language.">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2bQb2mm4vw">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2bQb2mm4vw">
@@ -13,11 +18,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg?v=2bQb2mm4vw" color="#252525">
   <link rel="shortcut icon" href="/favicon.ico?v=2bQb2mm4vw">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <meta name="theme-color" content="#252525" />
-
-  <title>{{ site.title }}</title>
   <link rel="stylesheet" href="{{ 'assets/css/style2.css?v=' | append: site.github.build_revision | relative_url }}">
-
   {% comment %}
   <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
   {% endcomment %}
@@ -26,7 +27,6 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   {% if site.google_analytics %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
