@@ -1,7 +1,7 @@
 ---
 ---
 $trailer_width: 944px;
-$very_thin: 410px;
+$very_thin: 450px;
 
 body {
   font: 14px/1.5 "OpenSansRegular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,40 +52,54 @@ body {
   }
 }
 
-.get-on-steam {
+.buy-it {
   color: #fff;
   text-decoration: none;
+  margin-bottom: 1em;
 
-  div {
-    display: inline-block;
+  .buy-now {
+    display: block;
     position: relative;
-    top: -0.5em;
-    right: -0.6em;
+    padding-bottom: 1ex;
     font-size: 25px;
-    margin: 0.5em 0;
+    margin: -1ex 0 0;
+    filter: brightness(75%);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  img.steam {
+    height: 40px;
+    // margin-left: 2em;
+  }
+  img.itch {
+    height: 35px;
+    position: relative;
+    top: -3px;
+    margin-left: 2em;
   }
   img {
-    height: 40px;
+    filter: brightness(75%);
+    &:hover {
+      filter: brightness(100%);
+    }
   }
-  filter: brightness(75%);
-
-  &:hover {
-    filter: brightness(100%);
-  }
-
-  transition: filter 333ms ease-out;
 }
 @media only screen and (max-width: $very_thin) {
-  .get-on-steam {
-    div {
-      font-size: 6vw;
+  .buy-it {
+    .buy-now {
+      font-size: 5vw;
+      // display: none;
     }
-    img {
-      height: 10vw;
+    img.steam {
+      height: 9vw;
+    }
+    img.itch {
+      height: 8vw;
     }
   }
 }
-
 
 .video-wrap {
   text-align: center;
