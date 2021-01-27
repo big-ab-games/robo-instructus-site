@@ -29,9 +29,9 @@ body {
 }
 
 .screens {
-  padding: 1.5em 0 0.75em;
-  .screen {
-    padding: 0 8px;
+  padding: 1.5em 0 0;
+  .screen > img {
+    padding: 0 8px 0.75em;
   }
   img {
     filter: brightness(66%);
@@ -43,8 +43,8 @@ body {
 }
 @media only screen and (max-width: $very_thin) {
   .screens {
-    .screen {
-      padding: 0 1%;
+    .screen > img {
+      padding: 0 1% 0.75em;
     }
     img {
       width: 43%;
